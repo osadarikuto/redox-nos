@@ -47,7 +47,7 @@ pub fn set_ip(address: &str) -> std::io::Result<()> {
                 prefix: subnet,
 
             };
-            let path = "/scheme/netcfg/ifaces/eth0/addr/set";
+            let path = "/scheme/nos-ip/addr/set";
             let mut file = OpenOptions::new()
                 .write(true)
                 .open(path)?;
